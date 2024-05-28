@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b11956;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 4px;
+  background-color: #7f153e;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.col {
+  flex: 1;
+}
+
+.col label {
+  display: block;
+  margin-bottom: 5px;
+}
+.row .col input[type="radio"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.row .col label {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.row .col button {
+  margin: 0 auto;
+  display: block;
+  width: 70%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+.error {
+  border: 3px solid red;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* Responsive Styles (for smaller screens) */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Form adjusts to 90% width on smaller screens */
+  }
+
+  .row {
+    flex-direction: column; /* Stacks labels and inputs on top of each other */
+  }
+
+  .col {
+    flex: unset; /* Removes flex properties for better layout */
+  }
+
+  .col label {
+    margin-bottom: 10px; /* Adjusts spacing for stacked layout */
+  }
+  .row .col button {
+    margin: 0 auto; /* Automatically centers the button horizontally */
+    width: 40%;
+    padding: 5px;
+  }
+}

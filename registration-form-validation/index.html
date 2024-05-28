@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="myform" novalidate>
+        <div class="row">
+          <div class="col">
+            <label for="name">Name:</label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="name"
+              name="firstname"
+              placeholder="Your name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="email">Email:</label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="password">Password:</label>
+          </div>
+          <div class="col">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="phone">Phone Number:</label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Phone number"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="gender">Gender:</label>
+          </div>
+          <div class="col">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="language">Language:</label>
+          </div>
+          <div class="col">
+            <select id="language" name="language">
+              <option value="english">English</option>
+              <option value="spanish">Spanish</option>
+              <option value="french">French</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="zip">Zip Code:</label>
+          </div>
+          <div class="col">
+            <input type="text" id="zip" name="zip" placeholder="Zip code" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="about">About:</label>
+          </div>
+          <div class="col">
+            <textarea
+              id="about"
+              name="about"
+              style="height: 50px"
+              placeholder="Write about yourself..."
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="submit">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

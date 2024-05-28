@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise Table 2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      table {
+        width: 70%;
+        margin: 20px;
+        border-spacing: 6px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #97e7f5;
+      }
+      tr {
+        background-color: #9ce1bd;
+      }
+
+      tr:last-child {
+        background-color: #97e7f5;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Developer name</th>
+          <th>Language</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Berners Lee</td>
+          <td>HTML</td>
+          <td>1991</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Hakon Wium Lie</td>
+          <td>CSS</td>
+          <td>1996</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Brendan Eich</td>
+          <td>Javascript</td>
+          <td>1995</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Rasmus Lerdof</td>
+          <td>PHP</td>
+          <td>1994</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>James Gosling</td>
+          <td>Java</td>
+          <td>1995</td>
+        </tr>
+
+        <tr>
+          <td colspan="4">
+            <strong>Web Technologies - Developers List</strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

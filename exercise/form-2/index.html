@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Form 2</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .fields {
+        padding: 40px;
+      }
+      h1 {
+        background-color: #de8702;
+        margin: 0;
+        padding: 10px;
+        color: white;
+      }
+      .buttons {
+        background-color: #de8702;
+        margin: 0;
+        padding: 10px;
+      }
+
+      form {
+        text-align: left;
+        border: 1px solid black;
+        width: 30%;
+      }
+      button {
+        border: none;
+        padding: 13px; /* Adjust the padding to increase button size */
+        font-size: 15px;
+      }
+      input {
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+      select {
+        margin-top: 20px;
+        margin-left: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Sign up</h1>
+      <div class="fields" style="background-color: #232535; color: yellow">
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Enter your first name"
+          required
+        />
+        <br />
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Enter your last name"
+          required
+        />
+        <br />
+        <label for="dob">Date of Birth:</label>
+        <select id="day" name="day" required>
+          <option value="" disabled selected>Day</option>
+        </select>
+
+        <select id="month" name="month" required>
+          <option value="" disabled selected>Month</option>
+        </select>
+
+        <select id="year" name="year" required>
+          <option value="" disabled selected>Year</option>
+        </select>
+        <br />
+
+        <label for="gender">Gender:</label>
+        <input
+          type="radio"
+          id="male"
+          name="gender"
+          value="male"
+          style="margin-left: 55px"
+          required
+        />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+        <br />
+        <label for="country">Country:</label>
+        <select id="country" name="country" style="margin-left: 50px" required>
+          <option value="" disabled selected>Country</option>
+        </select>
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          style="margin-left: 64px"
+          required
+        />
+        <br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          style="margin-left: 41px"
+          required
+        />
+        <br />
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          placeholder="Confirm your password"
+          style="margin-left: 10px"
+          required
+        />
+        <br />
+        <div style="text-align: right">
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree">I agree to the terms and conditions</label>
+        </div>
+        <br />
+      </div>
+      <div class="buttons" style="text-align: right">
+        <button type="submit" style="background-color: #63ae5d; color: white">
+          Submit
+        </button>
+        <button type="button" style="background-color: #d9544e; color: white">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="main/images/favicon-32x32.png"
+    />
+
+    <title>Todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main/css/style.css" />
+  </head>
+  <body class="">
+    <!-- CONTENT -->
+    <main class="container-fluid">
+      <div class="hero">
+        <img src="main/images/bg-mobile-dark.jpg" alt="Hero image" />
+      </div>
+      <div class="wrapper">
+        <div class="row">
+          <div class="header">
+            <h1 class="header-title">T O D O</h1>
+            <a
+              href="javascript:void(0)"
+              role="button"
+              class="toggle-theme"
+              aria-label="Toggle theme"
+            ></a>
+          </div>
+
+          <div class="card">
+            <div class="list-items">
+              <div class="round-checkbox">
+                <form class="addTodoForm">
+                  <input type="checkbox" id="createCheckBox" />
+                  <label for="createCheckBox" class="checkbox-label"></label>
+                  <input
+                    type="text"
+                    id="addTodo"
+                    class="addTodo"
+                    placeholder="Create new Todo"
+                    aria-label="Create new Todo"
+                    autofocus
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="list"></div>
+            <div class="card-footer">
+              <p><span class="total-items">0</span></p>
+              <div class="list-items_filter">
+                <a href="javascript:void(0)" role="button" class="btnAll"
+                  >All</a
+                >
+                <a href="javascript:void(0)" role="button" class="btnActive"
+                  >Active</a
+                >
+                <a href="javascript:void(0)" role="button" class="btnCompleted"
+                  >Completed</a
+                >
+              </div>
+              <a
+                href="javascript:void(0)"
+                role="button"
+                class="btnClearCompleted"
+                >Clear Completed</a
+              >
+            </div>
+          </div>
+
+          <div class="card | card-visibility">
+            <div class="list-items_filter">
+              <a href="javascript:void(0)" role="button" class="btnAll">All</a>
+              <a href="javascript:void(0)" role="button" class="btnActive"
+                >Active</a
+              >
+              <a href="javascript:void(0)" role="button" class="btnCompleted"
+                >Completed</a
+              >
+            </div>
+          </div>
+
+          <div class="instruction">
+            <p>Drag and drop to reorder list</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script src="main/js/scripts.js"></script>
+  </body>
+</html>

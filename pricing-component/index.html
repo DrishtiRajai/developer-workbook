@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive pricing component</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+      <article class="card">
+        <div class="card__sepatator">
+          <div class="card__top">
+            <p class="card__page-views">100k Pageviews</p>
+            <input type="range" name="page-views" min="0" max="4" value="2" />
+            <div class="card__price">
+              <p class="card__discount-price">Descuento</p>
+              <p><span class="card__normal-price">$16.00</span> / month</p>
+            </div>
+            <div class="card__billing">
+              <p>Monthly Billing</p>
+              <input
+                type="checkbox"
+                name="year-billing"
+                id="year-billing"
+                class="checkbox"
+              />
+              <label for="year-billing"></label>
+              <p>Yearly Billing</p>
+              <p class="discount">25% discount</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__bottom">
+          <ul class="card__highlights">
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button class="card__button">Start my trial</button>
+        </div>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

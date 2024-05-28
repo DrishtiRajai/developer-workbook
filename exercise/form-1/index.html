@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      table {
+        width: 30%;
+        margin: 20px;
+        border-spacing: 6px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;
+      }
+
+      table thead tr td {
+        background-color: #cccccc;
+      }
+      tr {
+        background-color: white;
+      }
+
+      tbody tr:last-child {
+        background-color: white;
+      }
+      input:invalid {
+        border: 1px solid red; /* Highlight invalid input fields */
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table border="1">
+        <thead>
+          <tr>
+            <td colspan="2">
+              <strong>Sign In</strong>
+            </td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                pattern=".{8,}"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <strong> <button type="submit">Sign In</button></strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+body {
+  margin: 10px;
+  color: grey;
+}
+
+#container {
+  margin: 50px 40px;
+  text-align: center;
+}
+
+#slots {
+  margin: 50px auto 0 auto;
+  background: #ddf;
+}
+
+#cards {
+  margin: 0 auto;
+  background: #ddddff;
+}
+
+#slots,
+#cards {
+  width: 910px;
+  height: 120px;
+  padding: 20px;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#slots div,
+#cards div {
+  float: left;
+  width: 58px;
+  height: 78px;
+  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 0;
+  border: 2px solid #333;
+
+  border-radius: 10px;
+  margin: 0 0 0 10px;
+  background: rgb(127, 127, 159);
+}
+
+#slots div {
+  border-style: dashed;
+  color: white;
+}
+
+#cards div {
+  background: #7f7f9f;
+  color: #fff;
+  font-size: 60px;
+}
+#slots div:first-child,
+#cards div:first-child {
+  margin-left: 0;
+}
+
+#card1.correct,
+#card2.correct,
+#card3.correct,
+#card4.correct,
+#card5.correct,
+#card6.correct,
+#card6.correct,
+#card7.correct,
+#card8.correct,
+#card9.correct,
+#card10.correct {
+  background: green;
+}
+
+#msg {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 150px;
+  z-index: 100;
+  background: rgb(213, 213, 118);
+
+  border-radius: 20px;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for phones and tablets */
+  #container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #cards div {
+    width: 45px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  #slots {
+    margin-top: 20px;
+  }
+
+  #msg {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+}

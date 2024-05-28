@@ -1,0 +1,112 @@
+body {
+  background-color: #ede8e3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#quiz-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+#quiz-header::after {
+  content: "";
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  bottom: 0;
+  height: 1px;
+  background-color: grey;
+}
+h1 {
+  text-align: center;
+  margin-left: 10px;
+  font-family: "Lato", sans-serif;
+}
+img {
+  max-width: 100px;
+}
+#quiz-footer {
+  background-color: #f4f3f6;
+  margin-top: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-body {
+  flex: 1;
+  margin-top: 10px;
+}
+.question {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  padding-left: 50px;
+}
+.options {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.buttons {
+  text-align: center;
+}
+.buttons input[type="submit"],
+.buttons button {
+  margin: 10px;
+  padding: 10px;
+  width: 7%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.buttons button {
+  background-color: #31cd63;
+}
+.buttons input[type="submit"] {
+  background-color: #b4b3b5;
+}
+
+#note {
+  color: #191d63;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.correct {
+  accent-color: green;
+}
+.incorrect {
+  accent-color: red;
+}
+.result {
+  color: red;
+}
+
+/* For phones (up to 768px) */
+@media only screen and (max-width: 768px) {
+  #quiz-footer {
+    padding: 15px; /* Adjust padding */
+  }
+  .buttons input[type="submit"],
+  .buttons button {
+    width: auto; /* Remove fixed width */
+  }
+}
+
+/* For tablets (768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #quiz-footer {
+    padding: 20px; /* Adjust padding */
+  }
+  .buttons input[type="submit"],
+  .buttons button {
+    width: 50%; /* Set width to 50% */
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "drish/wp-cli",
+    "autoload": {
+        "psr-4": {
+            "Drish\\WpCli\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DrishtiRajai",
+            "email": "drishtirajai7@gmail.com"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.5"
+    }
+}
