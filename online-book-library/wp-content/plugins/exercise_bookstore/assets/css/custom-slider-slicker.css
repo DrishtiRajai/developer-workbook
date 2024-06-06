@@ -1,0 +1,603 @@
+/*
+* CSS For Category Slider 
+*/
+
+.category-block {
+  width: 100%;
+  max-width: 1344px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
+h1.category-header-text {
+  font-size: 35px;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-left: 18px;
+}
+
+.category-main {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 16px;
+  background-color: #af68c5;
+  height: 148px;
+  width: 313px;
+  padding: 50px 0;
+  padding-left: 30px;
+  border-radius: 15px;
+}
+
+h1.cat-header-name {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p.cat-book-count {
+  color: #dfc3e8;
+  padding-top: 18px;
+  font-weight: 500;
+}
+
+ul.slick-dots {
+  position: absolute;
+  top: 0px;
+  right: 135px;
+}
+
+.category-row.slick-initialized.slick-slider.slick-dotted {
+  position: relative;
+}
+
+ul.slick-dots li {
+  display: inline-block;
+  width: 34px;
+  height: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #e2c9ea;
+}
+
+ul.slick-dots li button {
+  visibility: hidden;
+}
+
+ul.slick-dots li.slick-active {
+  width: 54px;
+  background-color: #8d28ad;
+}
+
+@media only screen and (max-width: 650px) {
+  .category-block {
+    min-width: 812px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .category-block {
+    min-width: 848px;
+  }
+}
+
+/*
+* CSS for Top 10 Rated Books for Home page 
+*/
+
+.top-rated-books-block {
+  width: 100%;
+  background-color: #fcf8fd;
+}
+
+.top-rated-wrapper {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h1.top-rated-header-text {
+  font-size: 35px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+.top-rated-viewmore {
+  margin-left: 90%;
+  margin-top: -15px;
+  color: #8d28ad;
+}
+.top-rated-book-main {
+  padding-top: 60px;
+}
+
+.top-rated-book-col {
+  display: inline-block;
+  width: 150px;
+  margin-left: 40px;
+}
+
+span.top-rated-img-box {
+  display: inline-block;
+}
+
+.top-rated-img {
+  width: 170px;
+  height: 243px;
+  border-radius: 20px;
+}
+
+.top-rated-rating-section {
+  padding: 25px 0;
+}
+
+.top-rated-rating-section i {
+  color: #ff7a00;
+  padding-right: 6px;
+}
+
+h2.top-rated-book-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p.top-rated-book-author {
+  font-size: 16px;
+  font-weight: normal;
+  color: #323233;
+  padding-top: 17px;
+}
+
+button.top-rated-btn {
+  border: none;
+  width: 140px;
+  height: 74px;
+  border-radius: 13px;
+  background-color: #eddef2;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+button.top-rated-btn span {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+button.top-rated-btn .rated-price {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+img.top-rated-cart-img {
+  position: absolute;
+  top: 9px;
+  left: 60%;
+  padding: 14px;
+  border-radius: 26px;
+  background-color: #8d28ad;
+  box-shadow: 10px 10px 14px #ae94b6;
+}
+
+.fa-arrow-right.slick-arrow {
+  position: absolute;
+  top: 161px;
+  left: 20px;
+  font-size: 0;
+  background-image: url(../image/left-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 47px;
+  background-color: #ffff;
+  border-radius: 36px;
+  box-shadow: 2px 3px 14px 4px #ac94b6;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.fa-arrow-left.slick-arrow {
+  font-size: 0;
+  background-image: url(../image/right-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  height: 45px;
+  width: 47px;
+  background-color: white;
+  box-shadow: 2px 3px 14px 4px #ac94b6;
+  border-radius: 36px;
+  position: absolute;
+  top: 161px;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.top-rated-book-main::before {
+  content: "";
+  height: 100%;
+  width: 63px;
+  top: 55px;
+  left: 0px;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.23)
+  );
+}
+
+@media screen and (max-width: 1200px) {
+  .top-rated-wrapper {
+    max-width: 1000px;
+  }
+  .top-rated-viewmore {
+    margin-left: 80%;
+  }
+  .fa-arrow-left.slick-arrow {
+    right: 22px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .top-rated-wrapper {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top-rated-wrapper {
+    max-width: 780px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .top-rated-books-block {
+    min-width: 900px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top-rated-books-block {
+    max-width: 720px;
+  }
+
+  .top-rated-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .top-rated-books-block {
+    min-width: 850px;
+  }
+}
+
+/*
+* CSS For displaying Featured Books in Front side
+*/
+
+.featured-book-block {
+  width: 100%;
+}
+
+h1.featured-book-header-text {
+  padding-left: 45px;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.featured-viewmore {
+  margin-left: 90%;
+  margin-top: -15px;
+  color: #8d28ad;
+}
+
+.featured-book-main {
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.featured-book-col-main {
+  display: flex !important;
+  flex-direction: row;
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 22px;
+  padding-top: 50px;
+}
+
+.featured-book-col-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.featured-book-img-block img {
+  height: 300px;
+  width: 230px;
+  background-color: #c4c4c4;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.featured-book-col-bottom {
+  padding-left: 30px;
+}
+
+.featured-book-cat {
+  height: 46px;
+  width: 131px;
+  display: inline-block;
+  background-color: #eadbef;
+  text-align: center;
+  color: #8d28ad;
+  padding-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 11px;
+}
+
+.featured-book-rating {
+  padding-left: 31px;
+}
+
+.featured-book-rating i {
+  color: #ff7a00;
+}
+
+.featured-book-reviews {
+  padding-left: 20px;
+  font-size: 16px;
+  color: #755a7d;
+  font-weight: normal;
+}
+
+h2.featured-book-title {
+  font-size: 30px;
+  padding-top: 40px;
+  font-weight: 600;
+}
+
+.featured-book-desc {
+  width: 417px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+  padding-top: 31px;
+  color: #9e9e9e;
+}
+
+span.featured-book-price-block {
+  display: block;
+  font-size: 36px;
+  font-weight: 600;
+  padding-top: 39px;
+  color: #8d28ad;
+}
+
+span.featured-book-price-block .featured-rated-price {
+  font-size: 16px;
+  padding-left: 10px;
+  color: #9a9a9a;
+  font-weight: normal;
+}
+
+button.featured-book-cart {
+  background-color: #8d28ad;
+  color: #ffff;
+  margin-top: 44px;
+  height: 68px;
+  width: 190px;
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 5px 10px 2px #ae94b6;
+}
+
+button.featured-book-cart img {
+  display: inline-block;
+}
+
+.featured-book-heart {
+  width: 68px;
+  height: 70px;
+  background: white;
+  border: 1px solid #c4c4c4;
+  font-size: 36px;
+  display: inline-block;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+.featured-book-heart i {
+  padding: 15px;
+  color: #ff2f2f;
+}
+
+span.featured-book-viewdetails {
+  margin-left: 12px;
+  color: #8d28ad;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .featured-book-main {
+    max-width: 1040px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .featured-book-main {
+    max-width: 1040px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .featured-book-main {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .featured-viewmore {
+    margin-left: 40%;
+  }
+
+  .featured-book-main {
+    max-width: 780px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .featured-book-block {
+    min-width: 900px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .featured-book-main {
+    min-width: 848px;
+  }
+  .featured-book-main {
+    max-width: 690px;
+  }
+}
+
+/*
+* CSS for Testimonial Slider
+*/
+
+.testimonial-wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto !important ;
+}
+h1.testimonial-heading {
+  font-size: 35px;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.top-desc {
+  text-align: center;
+  margin-inline: 328px;
+  margin-top: 20px;
+  display: block;
+  font-size: 16px;
+  color: black;
+  opacity: 0.6;
+}
+
+.testimonial-main {
+  display: inline-block;
+}
+
+.testimonial-col {
+  margin: 45px auto;
+  background-color: white;
+  border: none;
+  box-shadow: 10px 10px 14px #ae94b6;
+  border-radius: 10px;
+  padding: 30px;
+  width: 428px;
+  height: 299px;
+  margin: 45px;
+}
+
+.testimonial-star {
+  color: #ff7a00;
+}
+
+.testimonial-star i {
+  padding-right: 6px;
+}
+
+.testimonial-desc {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.testimonial-client-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.client-name {
+  font-size: 18px;
+  color: #3d3d3d;
+  font-weight: 500;
+}
+
+.client-designation {
+  font-size: 14px;
+  font-weight: normal;
+  color: #3d3d3d;
+}
+
+.client-img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+  .testimonial-wrap {
+    max-width: 1100px;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .testimonial-wrap {
+    max-width: 625px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.testimonial-section {
+    margin: 0;
+  }
+
+  .top-desc {
+    margin-inline: 190px;
+  }
+}
+@media screen and (max-width: 650px) {
+  section.testimonial-section {
+    margin: 0;
+    min-width: 900px;
+  }
+}
+@media screen and (max-width: 468px) {
+  section.testimonial-section {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.testimonial-section {
+    margin: 0;
+  }
+  .testimonial-wrap {
+    max-width: 500px;
+    min-width: 848px;
+  }
+
+  .testimonial-main {
+    width: 585px;
+  }
+  .testimonial-col {
+    width: 550px;
+    margin-left: 84px;
+  }
+}

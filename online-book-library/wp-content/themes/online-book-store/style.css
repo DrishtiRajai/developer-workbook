@@ -1,0 +1,848 @@
+/*
+  Theme Name: Online Book Store
+  Description: A Simple custom theme for Online Book Store which contains Books Details. You can See Featured books, Top rated books, Authors of Books, Publishers of Books, Publish year of Books, Categories of Books and also include Search functionality with filters.
+  Author: Drishti Rajai
+  Author URI: https://multidots.com/
+  Version: 1.0
+  Tags: featured-books, trending-this-week, author, publisher, price, star-rating, search-books, categories, top-rated-books, book-listing, custom-background, theme-options, custom-color, custom-logo 
+  Requires at least: 5.0
+  Tested up to: 5.7
+  Requires PHP: 7.0
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Text Domain: Online Book Store
+
+  This theme, like WordPress, is licensed under the GPL.
+  Use it to make something cool, have fun, and share what you've learned with others
+*/
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body,
+html {
+  width: 100%;
+  min-width: 848px;
+}
+#wpadminbar {
+  min-width: 848px;
+}
+/* CSS For Header Part Starts */
+
+.header {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 1.5rem 5%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header .logo-header {
+  width: 110px;
+  height: 31px;
+}
+
+.header .logo i {
+  padding-right: 0.3rem;
+}
+
+.header .menu-arrow-header {
+  width: 71px;
+  height: 50px;
+  margin: 0 -183px;
+}
+
+.header .search-form-header {
+  margin-right: -8rem;
+  height: 3rem;
+  width: 29rem;
+  background: #f3f3f3;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+}
+
+.header .search-form-header input {
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  padding: 0 1.2rem;
+  font-size: 1rem;
+  background-color: #f3f3f3;
+  text-transform: none;
+}
+
+.header .search-form-header label {
+  font-size: 20px;
+  padding-right: 1.7rem;
+  cursor: pointer;
+  color: #244d4d;
+}
+
+.header .search-form-header label:hover {
+  color: #f3f3f3;
+}
+
+.header .icons div {
+  font-size: 1rem !important;
+  cursor: pointer;
+  color: #244d4d;
+  padding-right: 25px;
+}
+
+.header .icons div:hover {
+  color: #779;
+}
+
+.header .icons .btn-signin {
+  border: none;
+  vertical-align: super;
+  margin-right: 41px;
+  font-size: 17px;
+  background: none;
+  color: #636363;
+  font-weight: 600;
+}
+
+.header .icons .btn-account {
+  vertical-align: super;
+  color: #fff;
+  background-color: #8d28ad;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#search-btn {
+  display: none;
+}
+#login-btn {
+  display: none;
+}
+
+#add-user {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+/*  CSS For Header Part ends */
+
+/**
+  * CSS For Section Hero Banner Part ends
+  */
+
+.hero-banner {
+  height: 400px;
+  min-width: 890;
+  min-width: 908px;
+  max-width: 100%;
+  background: #753389;
+  margin-top: 15px;
+}
+
+.hero-text {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 9px;
+}
+
+.hero-text h1 span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.hero-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin-inline: 80px;
+  font-weight: normal;
+}
+
+/*
+  * CSS For Static Block on Front-page.
+  */
+
+.home-static-section {
+  width: 100%;
+  margin-top: 45px;
+  padding: 0px 17px 12px 42px;
+  background-color: #fcf8fd;
+}
+
+.static-block-row {
+  display: flex;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.static-block-col {
+  margin-top: 32px;
+  margin-right: 25px;
+  width: 405px;
+  height: 260px;
+}
+
+.static-block-col h3 {
+  font-size: 22px;
+  font-weight: medium;
+}
+
+.static-block-col p {
+  font-weight: normal;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .header .search-form-header {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 1rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-width: 908px;
+  }
+  #search-btn {
+    display: inline-block;
+  }
+
+  .header .search-form-header {
+    position: absolute;
+    top: -101%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+  }
+  .header .search-form-header.active {
+    top: 99%;
+  }
+
+  .hero-text {
+    left: 60%;
+    width: 70%;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-inline: 0;
+  }
+
+  /* Statci Block */
+
+  .static-block-col {
+    margin-right: 0;
+  }
+  .static-block-col h3 {
+    font-size: 16px;
+  }
+
+  .static-block-col p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  #login-btn {
+    display: inline-block;
+  }
+
+  #add-user {
+    display: inline-block;
+  }
+  .header .icons .btn-account,
+  .header .icons .btn-signin {
+    display: none;
+  }
+
+  .static-block-row {
+    display: block;
+    text-align: center;
+  }
+
+  .static-block-col {
+    width: 771px;
+    padding-top: 25px;
+  }
+
+  .static-block-col h3 {
+    font-size: 22px;
+  }
+
+  .hero-text {
+    width: 80%;
+    left: 73%;
+  }
+
+  .static-block-col p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-text {
+    width: 90%;
+    left: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    width: 905px;
+  }
+
+  .header .logo-header {
+    width: 80px;
+    height: 23px;
+  }
+
+  .hero-text {
+    width: 100%;
+    left: 108%;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-text {
+    left: 118%;
+  }
+}
+@media (max-width: 365px) {
+  .hero-text {
+    left: 128%;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+}
+
+/**
+  * CSS For Footer Section starts
+  */
+
+.footer {
+  position: relative;
+  width: 100%;
+}
+
+.footer-top-section {
+  width: 100%;
+  height: 300px;
+  background-color: #380b46;
+}
+
+.footer-main {
+  padding: 60px;
+  margin: 20px auto;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  margin-top: 100px;
+}
+
+.footer-col {
+  color: #fff;
+}
+
+.footer-inner-col {
+  display: flex;
+}
+
+.footer-shop-num {
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+.footer-shop {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.6;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.footer-shop-img {
+  width: 52px;
+  height: 56px;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: #8d28ad;
+}
+
+.newslater-box {
+  padding: 85px 0;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.news-col {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1.sub-footer-heading {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 113px;
+  padding-right: 172px;
+  line-height: 49px;
+  position: relative;
+}
+
+.news-col {
+  display: flex;
+}
+
+input.footer-sub-input {
+  width: 400px;
+  height: 68px;
+  background-color: #9d49b8;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+  padding-left: 32px;
+}
+
+.errormsg {
+  position: absolute;
+  top: 64%;
+  left: 58%;
+  color: red;
+}
+
+input.footer-sub-input::placeholder {
+  color: #e2e2e2;
+  margin-left: 10px;
+}
+
+button.footer-sub-btn {
+  color: #8d28ad;
+  background-color: #fff;
+  height: 68px;
+  width: 166px;
+  border: none;
+  border-radius: 12px;
+  margin-left: 19px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h1.sub-footer-heading::before {
+  content: "";
+  background-image: url(assets/image/before-img.png);
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  color: #fff;
+  bottom: 45px;
+  left: 80px;
+  background-size: cover;
+}
+.newslater-box::after {
+  content: "";
+  background-image: url(assets/image/after-img.png);
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  height: 68px;
+  width: 146px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.newslater-box {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-followus-row {
+  padding: 80px 84px;
+}
+
+.footer-followus-col {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.footer-clevr-desc {
+  font-size: 16px;
+  color: #7d6485;
+  font-weight: normal;
+  line-height: 24px;
+  padding-top: 35px;
+  width: 500px;
+}
+
+.footer-followus-heading {
+  font-size: 18px;
+  font-weight: 500px;
+  padding-top: 60px;
+}
+
+.follow-inline-logos {
+  padding-top: 24px;
+  padding-left: 25px;
+}
+
+.follow-inline-logos p {
+  display: inline-block;
+  border: 1px solid #f2e8f6;
+  padding: 24px;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.logo-footer:hover {
+  background-color: #8d28ad;
+  cursor: pointer;
+}
+
+.footer-followus-col.menu {
+  margin-left: 100px;
+}
+
+.footer-quick-link {
+  margin-top: 47px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-menu-link {
+  margin-top: 30px;
+}
+
+.menu li {
+  color: #755a7d;
+  font-size: 16px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #755a7d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu li a:hover {
+  color: #8d28ad;
+}
+
+.footer-menu-link li {
+  padding-bottom: 30px;
+  color: #755a7d;
+  font-size: 16px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.footer-followus-col.customer {
+  margin-left: 100px;
+}
+
+h1.footer-customer-area {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 47px;
+}
+
+ul.footer-customer-area {
+  margin-top: 30px;
+}
+
+ul.footer-customer-area li {
+  padding-bottom: 30px;
+  list-style-type: none;
+  color: #755a7d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-followus-col.subscriber {
+  margin-top: 47px;
+  margin-left: 140px;
+}
+
+h1.footer-subs-heading {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p.footer-subs-para {
+  padding-top: 48px;
+  color: #755a7d;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.inline-btn-input {
+  margin-top: 45px;
+}
+
+input.subs-input-footer {
+  height: 66px;
+  width: 280px;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 13px;
+  padding-left: 18px;
+  letter-spacing: 2px;
+}
+
+button.footer-subs-btn {
+  color: #fff;
+  background-color: #8d28ad;
+  height: 67px;
+  width: 121px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+  box-shadow: 0px 1px 15px 1px #ae94b6;
+}
+.footer-copyright {
+  border-top: 2px solid #ebebeb;
+  padding: 53px 0;
+}
+
+.youtube-footer {
+  background-color: #8d28ad;
+}
+.copyright-text {
+  float: left;
+  margin-left: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #755a7d;
+  letter-spacing: 1px;
+}
+
+.peterdraw-text {
+  float: right;
+  margin-right: 152px;
+  color: #755a7d;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.errormsgtext {
+  color: red;
+}
+@media screen and (max-width: 1400px) {
+  .news-col {
+    margin-top: 44px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .errormsg {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .footer-followus-col.menu {
+    margin-left: unset;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  h1.sub-footer-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .errormsg {
+    left: 43%;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .footer-followus-col.customer {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer-main {
+    margin-top: 0;
+  }
+
+  .footer-followus-col.customer {
+    margin-left: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    min-width: 908px;
+  }
+
+  .footer-main {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .footer-followus-col.menu {
+    margin-left: 140px;
+  }
+
+  .footer-followus-col.customer {
+    margin-left: 90px;
+  }
+
+  .news-col {
+    display: block;
+  }
+
+  h1.sub-footer-heading {
+    padding-left: 36px;
+    padding-right: 10px;
+  }
+
+  button.footer-sub-btn {
+    margin-top: 15px;
+    margin-left: 110px;
+  }
+
+  .errormsg {
+    top: 26%;
+    left: 51%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .footer {
+    min-width: 848px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    min-width: 910px;
+  }
+
+  .footer-followus-col.menu {
+    margin-left: 180px;
+  }
+
+  .footer-followus-col.customer {
+    margin-left: 100px;
+  }
+}
+
+/**
+  CSS For 404 page
+  */
+
+.notfound-block {
+  margin-top: 10%;
+  margin-left: 20%;
+  display: inline-block;
+}
+
+.not-found {
+  padding: 10px;
+  text-align: center;
+}
+
+h1.not-found-text {
+  font-size: 40px;
+  color: #7d6485;
+}
+
+p.error-notfound {
+  font-size: 20px;
+}
+
+p.home-url-link {
+  padding: 20px;
+}
+p.home-url-link a {
+  color: #9d49b8;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+p.home-url-link:hover a {
+  color: cadetblue;
+  font-size: 30px;
+}

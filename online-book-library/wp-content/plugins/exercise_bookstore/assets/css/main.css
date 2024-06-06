@@ -1,0 +1,930 @@
+/*
+* CSS For Search Filter for Books 
+*/
+
+.search-container {
+  position: absolute;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 27px;
+  top: 40%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 1px 10px 10px 2px #ae94b6;
+  transform: translateY(50%);
+  z-index: 1;
+}
+
+.book-search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-option {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+  justify-content: center;
+}
+
+.bottom-filter-option {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.price-wrap {
+  display: inline-block;
+  color: #636363;
+  width: 44%;
+  margin-right: 31px;
+}
+
+p.price-head {
+  padding-bottom: 12px;
+  font-size: 23px;
+  font-family: "Poppins";
+  font-weight: normal;
+  margin-left: 122px;
+}
+.input {
+  display: flex;
+}
+input.price1 {
+  padding: 14px 23px;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+input.price2 {
+  padding: 14px 23px;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.star-rating {
+  display: inline-block;
+  margin-top: 33px;
+  margin-left: 45px;
+}
+
+span.rating-head {
+  padding-bottom: 12px;
+  font-size: 23px;
+  font-family: "Poppins";
+  font-weight: normal;
+  margin-left: 40px;
+}
+
+select.rating-star-wrap {
+  padding: 14px 23px;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+input.search-hero-banner {
+  width: 551px;
+  padding: 14px 23px;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #767676;
+  letter-spacing: 1px;
+  margin-top: 34px;
+}
+.search-btn-after::after {
+  content: "\f061";
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  top: 25px;
+  right: 19px;
+  position: absolute;
+  color: #fff;
+}
+
+.search-btn-after {
+  display: inline-block;
+  position: relative;
+  margin-left: 80px;
+}
+
+button.hero-banner-search {
+  padding-right: 54px !important;
+  color: #fff;
+  border: none;
+  padding: 16px 28px;
+  background-color: #8d28ad;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 3px 4px 15px 5px #ae94b6;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+select.year-details {
+  padding: 14px 23px;
+  border: none;
+  margin-top: 30px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #767676;
+  letter-spacing: 1px;
+  margin-right: 20px;
+  position: relative;
+}
+
+select.publisher-details {
+  padding: 14px 23px;
+  border: none;
+  margin-top: 30px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #767676;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .search-container {
+    width: 87% !important;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .search-container {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    top: 25%;
+    left: 14%;
+  }
+  .search-btn-after {
+    margin-left: 200px;
+    margin-top: 15px;
+  }
+
+  .star-rating {
+    margin-left: 92px;
+  }
+
+  span.rating-head {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .search-container {
+    left: 29%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    width: 635px !important;
+    top: 35%;
+    left: 28%;
+  }
+
+  p.price-head {
+    display: table-row;
+  }
+}
+
+/*
+* CSS For Trending This Week Section For Home Page Slider
+*/
+
+.search-book-url-section {
+  background-color: #fdfbfe;
+  padding: 33px;
+  margin-top: 29px;
+}
+
+.search-top-url {
+  margin: 0 auto;
+}
+
+a.search-top-home-url {
+  text-decoration: none;
+  color: #755a7d;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+a.search-top-book-url {
+  text-decoration: none;
+  color: #8d28ad;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 2px solid #8d28ad;
+}
+
+a.search-top-home-url:hover {
+  color: #8d28ad;
+}
+
+section.trending-page-wrapper {
+  margin-top: 162px;
+  width: 100%;
+}
+
+.trending-week {
+  text-align: center;
+}
+
+h1.trend-heading {
+  font-size: 35px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+p.trend-para {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #666666;
+  margin-top: 33px;
+  line-height: 22px;
+}
+
+.trending-main-row {
+  width: 100%;
+  max-width: 1622px;
+  margin: 0 auto;
+}
+
+.trending-col {
+  margin-top: 84px;
+  text-align: center;
+  display: inline-block;
+  width: calc(20% - 10px);
+}
+
+span.image-trend {
+  display: inline-block;
+}
+
+h2.trend-book-title {
+  text-align: center;
+  color: #8d28ad;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 28px;
+}
+
+h1.trend-book-para {
+  font-size: 22px;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+p.trend-book-author {
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #666666;
+  margin-top: 10px;
+}
+
+button.trend-btn {
+  background-color: #fff;
+  border: 1px solid #f0e4f4;
+  color: #8d28ad;
+  width: 120px;
+  height: 58px;
+  border-radius: 11px;
+  margin-top: 26px;
+  font-size: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+button.trend-btn:hover {
+  background-color: #8d28ad;
+  color: #fff;
+}
+
+.trend-price-dis {
+  font-weight: 100;
+  opacity: 0.6;
+}
+
+img.featured-img-trend {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.trending-rating {
+  position: absolute;
+  top: 141%;
+  width: 108px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: coral;
+  border-radius: 7px;
+  color: white;
+  padding: 7px;
+  visibility: hidden;
+}
+
+.trending-col:hover .trending-rating {
+  z-index: 10;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 1400px) {
+  .trending-col {
+    width: calc(25% - 10px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  section.trending-page-wrapper {
+    margin-top: 233px;
+  }
+  .trending-col {
+    width: calc(30% - 10px);
+  }
+
+  .trending-main-row {
+    padding: 0 68px;
+  }
+
+  .trending-rating {
+    top: 158%;
+  }
+
+  .trending-rating {
+    top: unset;
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .trending-col {
+    width: calc(50% - 10px);
+  }
+
+  .trending-week {
+    margin-top: 277px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  section.trending-page-wrapper {
+    margin-top: 40px;
+  }
+  .trending-rating {
+    top: unset;
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .trending-col {
+    width: calc(100% - 10px) !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section.trending-page-wrapper {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section.trending-page-wrapper {
+    width: 903px;
+    margin-top: 90px;
+  }
+  .trending-main-row {
+    padding: 0 !important;
+  }
+  .trending-week {
+    margin-top: 303px !important;
+  }
+  h1.trend-heading {
+    font-size: 26px;
+  }
+  p.trend-para {
+    font-size: 13px;
+  }
+}
+
+/*
+* CSS for Search filter page of Books
+*/
+
+section.search-book-listing-section {
+  width: 1330px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+h1.search-main-heading-filter {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h2.search-cat-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 41px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+h2.search-cat-heading::after {
+  content: "\f105";
+  font-weight: 900;
+  padding-left: 116px;
+  color: #8d28ad;
+  vertical-align: bottom;
+  font-family: "Font Awesome 5 Free";
+}
+
+h2.search-cat-heading.active-toggle::after {
+  content: "\f107";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+
+.search-category-list label {
+  display: block;
+  padding-top: 26px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #636363;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-category-list {
+  padding-left: 64px;
+  margin-top: 14px;
+}
+
+.search-category-list label:hover {
+  color: #8d28ad;
+  cursor: pointer;
+}
+.search-category-list label input {
+  margin-right: 25px;
+  opacity: 0;
+}
+.search-category-list label input:checked ~ .searchcheckbtn {
+  background-color: #2196f3;
+}
+
+.search-publisher-list label {
+  display: block;
+  padding-top: 26px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #636363;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-publisher-list {
+  padding-left: 64px;
+  margin-top: 14px;
+}
+
+.search-publisher-list label:hover {
+  color: #8d28ad;
+  cursor: pointer;
+}
+
+h2.search-publisher-heading.active-toggle::after {
+  content: "\f107";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+
+.search-publisher-list label input {
+  margin-right: 25px;
+  opacity: 0;
+}
+
+.search-publisher-list label input:checked ~ .searchcheckbtn {
+  background-color: #2196f3;
+}
+
+span.searchcheckbtn {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+span.searchcheckbtn::after {
+  content: "";
+  top: 9px;
+  left: 9px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+}
+
+.search-book-list-col {
+  margin-left: 52px;
+  display: inline-block;
+  padding-right: 48px;
+  margin-top: 91px;
+}
+
+h2.search-publisher-heading {
+  font-size: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 41px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+h2.search-publisher-heading::after {
+  content: "\f105";
+  font-weight: 900;
+  padding-left: 136px;
+  color: #8d28ad;
+  vertical-align: bottom;
+  font-family: "Font Awesome 5 Free";
+}
+
+h2.search-year-heading {
+  font-size: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 41px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+h2.search-year-heading::after {
+  content: "\f105";
+  font-weight: 900;
+  padding-left: 188px;
+  color: #8d28ad;
+  vertical-align: bottom;
+  font-family: "Font Awesome 5 Free";
+}
+
+.search-year-list label {
+  display: block;
+  padding-top: 26px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #636363;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-year-list {
+  padding-left: 64px;
+  margin-top: 14px;
+}
+
+.search-year-list label:hover {
+  color: #8d28ad;
+  cursor: pointer;
+}
+
+h2.search-year-heading.active-toggle::after {
+  content: "\f107";
+  font-weight: 900;
+  vertical-align: bottom;
+  font-family: "Font Awesome 5 Free";
+}
+
+.search-year-list label input {
+  margin-right: 25px;
+  opacity: 0;
+}
+
+.search-year-list label input:checked ~ .searchcheckbtn {
+  background-color: #2196f3;
+}
+
+button.search-refile {
+  display: block;
+  margin: 37px auto;
+  height: 80px;
+  width: 256px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #636363;
+  border: 1px solid #f0e4f4;
+  background-color: #fff;
+  border-radius: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button.search-refile a {
+  text-decoration: none;
+  color: #636363;
+}
+
+button.search-refile:hover a {
+  color: #fff;
+}
+
+button.search-refile:hover {
+  background-color: #8d28ad;
+  color: #fff;
+  border: none;
+  box-shadow: 1px 5px 10px 2px #ae94b6;
+}
+
+.search-book-filter-wrap {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 30px;
+  border-left: 1px solid #f0e4f4;
+}
+
+h1.search-book-heading {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+p.search-book-desc {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 25px;
+}
+
+.search-book-img-block {
+  display: inline-block;
+  position: relative;
+}
+
+img.search-book-img {
+  width: 220px;
+  height: 380px;
+  display: block;
+  border-radius: 22px;
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+
+.book-icons {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.fa.fa-heart.search-book-heart-icon {
+  display: block;
+  background-color: #fff;
+  padding: 19px;
+  border-radius: 50px;
+  font-size: 32px;
+  margin-right: 5px;
+  box-shadow: 1px 5px 10px 2px #ae94b6;
+  color: #b9b9b9;
+}
+
+.fa.fa-search.search-book-search-icon {
+  background-color: #fff;
+  padding: 18px;
+  border-radius: 50px;
+  font-size: 32px;
+  margin-top: 22px;
+  box-shadow: 1px 5px 10px 2px #ae94b6;
+  color: #8d28ad;
+}
+
+.cart-filter-image {
+  background-color: #fff;
+  padding: 18px;
+  border-radius: 50px;
+  font-size: 32px;
+  margin-top: 22px;
+  box-shadow: 1px 5px 10px 2px #ae94b6;
+  display: block;
+  margin-right: 5px;
+}
+.search-book-img-block:hover .book-icons {
+  opacity: 1;
+  visibility: visible;
+  bottom: 48px;
+  transition: all ease 0.3s;
+  right: 10px;
+}
+
+.search-book-img-block:hover img.search-book-img {
+  opacity: 0.5;
+}
+span.star-filter-book {
+  display: block;
+  padding: 26px 0;
+}
+
+span.search-filter-cat {
+  color: #8d28ad;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2.search-filter-title {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 19px 0;
+}
+
+p.search-filter-author {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+.search-price-filter {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.searchBook-rated-price {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #755a7d;
+}
+
+.form-filter-col {
+  display: inline-block;
+}
+
+.search-book-filter-wrap {
+  display: inline-block;
+  width: calc(78.33% - 10px);
+}
+
+@media screen and (max-width: 1400px) {
+  section.search-book-listing-section {
+    width: 100% !important;
+  }
+
+  .search-book-list-main {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .search-book-filter-wrap {
+    width: calc(68.33% - 10px);
+  }
+}
+
+@media screen and (max-width: 951px) {
+  .search-book-filter-wrap {
+    width: calc(58.33% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-book-filter-wrap {
+    width: calc(50.33% - 10px);
+  }
+}
+
+/*
+* CSS for May Be You Like It Section For Search Page
+*/
+
+section.search-maybelike-wrap {
+  margin-top: 115px;
+}
+
+section.search-maybe-col-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1.search-maybe-heading-text {
+  font-size: 35px;
+  font-weight: 600;
+  padding-left: 50px;
+}
+
+.search-maybe-main {
+  margin-top: 90px;
+}
+
+.maybe-left-col {
+  display: inline-block;
+}
+
+img.maybe-book-img {
+  height: 286px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.maybe-right-col {
+  display: inline-block;
+  padding-left: 45px;
+}
+
+span.maybe-category-name {
+  height: 46px;
+  width: 122px;
+  color: #9a40b6;
+  background-color: #eedff3;
+  display: inline-block;
+  text-align: center;
+  padding-top: 13px;
+  border-radius: 13px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h2.maybe-book-title {
+  font-size: 24px;
+  padding-top: 31px;
+  font-weight: 600;
+}
+
+.maybe-book-author {
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 78px;
+  font-weight: normal;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.maybe-price {
+  font-size: 30px;
+  font-weight: 600;
+  color: #8d28ad;
+}
+
+.price {
+  font-size: 16px;
+  color: #636363;
+  font-weight: normal;
+  padding-left: 15px;
+}
+
+.viewmore {
+  margin-left: 88%;
+  color: #8d28ad;
+}
+
+.maybe-book-rating {
+  border-radius: 50px;
+  border: none;
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  background: #ffd782;
+  color: #ff7a00;
+}
+
+.maybe-book-rating i {
+  color: #ff7a00;
+}
+
+@media screen and (max-width: 800px) {
+  .viewmore {
+    margin-left: 70%;
+  }
+}
