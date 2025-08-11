@@ -33,7 +33,7 @@ Some highlights:
 
 ## 📥 How to Use
 1. **Clone this repository**
-   git clone https://github.com/yourusername/developer-workbook.git
+   git clone https://github.com/DrishtiRajai/developer-workbook.git
 2. Navigate into a specific project
    cd project-folder-name
 3. Run the project
