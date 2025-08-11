@@ -1,52 +1,67 @@
-# Frontend Mentor - Clock app solution
+# ⏰ Clock App with Quotes & Location Info
 
-This is a solution to the [Clock app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+A responsive web app that displays:
+- **Live digital clock** (auto-updates every second)
+- **Dynamic greeting** (morning, afternoon, evening, or night)
+- **Random motivational quotes** (via [Quotable API](https://api.quotable.io/))
+- **User's timezone & location** (via [IPBase API](https://ipbase.com/))
+- **Day of year, week number, and more** (via [World Time API](https://worldtimeapi.org/))
 
-## Table of contents
+---
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-- [Built with](#built-with)
-- [Author](#author)
+## 📸 Features
+- **Real-Time Clock** – Displays current time with leading zero formatting.
+- **Adaptive Greetings** – Automatically changes message depending on time of day.
+- **Day/Night Theme** – Switches background and styles based on local time.
+- **Random Quotes** – Fetches new quotes on demand.
+- **"More" Info Section** – Displays extended location & time details.
+- **Responsive Design** – Adjusts layout and greeting for mobile & desktop.
+
+---
+
+## 🛠 Tech Stack
+- **HTML5** – Structure
+- **CSS3** – Styling & responsive layout
+- **JavaScript (ES6+)** – Logic, API calls, DOM manipulation
+- **APIs Used:**
+  - [Quotable API](https://api.quotable.io/) – Random quotes
+  - [IPBase API](https://ipbase.com/) – Location & timezone
+  - [World Time API](https://worldtimeapi.org/) – Date/time details
+
+---
+
+## 📂 Project Structure
+clock-app/
+│── assets/
+└── README.md
+└── script.js
+└── style.css
+└── index.html
 
 
-## Overview
+---
 
-### The challenge
+## 🚀 Getting Started
 
-Users should be able to:
+### 1️⃣ Clone the repo
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View the current time and location information based on their IP address
-- View additional information about the date and time in the expanded state
-- Be shown the correct greeting and background image based on the time of day they're visiting the site
-- Generate random programming quotes by clicking the refresh icon near the quote
+git clone https://github.com/DrishtiRajai/clock-app.git
+cd clock-app
 
-### Screenshots
+### 1️⃣ Open in browser
 
-![Screenshot](./screenshot-1.jpg)
-![Screenshot](./screenshot-2.jpg)
+Simply open index.html in your browser.
+No build step is required.
+
+🔑 API Keys
+For location data, you’ll need an IPBase API Key.
+Replace the value of apiKey in script.js:
+
+const apiKey = 'YOUR_API_KEY_HERE';
+
+📧 Contact
+Drishti Rajai
+📩 drishtirajai7@gmail.com
 
 
-### Links
-
-- Solution URL: [GitHub.com](https://github.com/fitforlife66/ip-address-tracker/)
-- Live Site URL: [GitHub.io](https://fitforlife66.github.io/ip-address-tracker/)
-
-## Built with
-
-- Fetching API data
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-
-## Author
-
-- Website - [FitforLife66](https://github.com/fitforlife66)
-- Frontend Mentor - [@fitforlife66](https://www.frontendmentor.io/profile/fitforlife66)
+💡 This app is part of my Developer Workbook — a collection of projects I built during my web development training.
